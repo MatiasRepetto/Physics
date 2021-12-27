@@ -83,9 +83,9 @@ plt.scatter(delta_medianoche, altazobjeto_marco.alt,
             c=altazobjeto_marco.az, label='Objeto Deseado', lw=0, s=8,
             cmap='viridis')
 plt.fill_between(delta_medianoche, 0*u.deg, 90*u.deg,
-                 altazsol_marco < -0*u.deg, color='0.5', zorder=0)
+                 altazsol_marco.alt < -0*u.deg, color='0.5', zorder=0)
 plt.fill_between(delta_medianoche, 0*u.deg, 90*u.deg,
-                 altazsol_marco < -18*u.deg, color='k', zorder=0)
+                 altazsol_marco.alt < -18*u.deg, color='k', zorder=0)
 plt.colorbar().set_label('Azimuth [deg]')
 plt.legend(loc='upper left')
 plt.xlim(-12*u.hour, 12*u.hour)
