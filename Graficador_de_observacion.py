@@ -16,14 +16,15 @@ var_objeto_amirar = input()
 #obtener coordenadas del objeto a observar
 objeto_amirar = SkyCoord.from_name(var_objeto_amirar)
 
-# Ubicacion de el observatorio con fecha y hora de el momento a observar, momentaneamente hardcodeado
+# Ubicacion de el observatorio con fecha y hora de el momento a observar,
+# momentaneamente hardcodeado a atacama pathfinder chile altitud 5058 polucion: imperceptible
 
 print("Horario y fecha especificado de la observacion ej: 2021-25-12 23:30:00")
 var_objeto_fechayhora = input()
 
 
-bear_mountain = EarthLocation(lat=41.3*u.deg, lon=-74*u.deg, height=390*u.m)
-utcoffset = -4*u.hour  # Eastern Daylight Time
+bear_mountain = EarthLocation(lat=41.32*u.deg, lon=42.97*u.deg, height=5058*u.m)
+utcoffset = -3*u.hour  # Eastern Daylight Time
 time = Time(var_objeto_fechayhora) - utcoffset
 
 #conversion a sistema altitud por parametro altaz (Altitude-Azimuth system)
