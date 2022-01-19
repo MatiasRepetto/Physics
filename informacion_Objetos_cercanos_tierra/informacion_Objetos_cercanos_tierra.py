@@ -6,7 +6,7 @@
 import requests
 import pprint
 
-print("Introduzca la fecha de interez para los objetos (YY-MM-DD): ")
+print("Introduzca la fecha de interes para los objetos (YY-MM-DD): ")
 obj_ini_date = input()
 
 print("Introduzca la fecha final (7 dias despues de la inicial, YY-MM-DD): ")
