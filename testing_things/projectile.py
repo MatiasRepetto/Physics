@@ -10,7 +10,7 @@ import math as mp
 
 t = 0
 dt = 1
-grav = 9.18
+grav = 9.8
 
 print("Ingrese Velocidad del proyectil (metros por segundo): ")
 p_vel = float(input())
