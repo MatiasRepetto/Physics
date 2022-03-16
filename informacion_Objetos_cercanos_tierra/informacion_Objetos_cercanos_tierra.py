@@ -12,7 +12,7 @@ obj_ini_date = input()
 print("Introduzca la fecha final (7 dias despues de la inicial, YY-MM-DD): ")
 obj_fin_date = input()
 
-response = requests.get("https://api.nasa.gov/neo/rest/v1/feed?start_date="+obj_ini_date+"&end_date="+obj_fin_date+"&api_key=aqzWdEZSKyIcaFVKdy0wUj5lT0Mus4fExkNAwW4E")
+response = requests.get("https://api.nasa.gov/neo/rest/v1/feed?start_date="+obj_ini_date+"&end_date="+obj_fin_date+"&api_key=yourkey")
 result = response.json()
 obj_cant = result["element_count"]
 obj_id = result["near_earth_objects"]
